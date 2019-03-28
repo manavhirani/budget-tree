@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="366dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="15dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/click" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="68dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="1. Your Permanent Account Number (PAN) is your user ID.\n
+2. View your tax credit statement or Form 26AS. The TDS as per your Form 16 must tally with the figures in Form 26AS.
+\n3. Click on the income tax return forms and choose the financial year.
+\n4. Download the ITR form applicable to you. If you're exempt income exceeds Rs.5,000, the appropriate form will be ITR-2 (If the applicable form is ITR-1 or ITR 4S, you can complete the process on the portal itself, by using the 'Quick e-file ITR' link - click on the button).
+\n5. Open excel utility (the downloaded return preparation software) and fill out the form by entering all details using your Form 16.
+\n6. Check the tax payable amount by clicking the 'calculate tax' tab.
+\n7. Pay tax (if applicable) and fill in the challan details.
+\n8. Confirm all the data provided in the worksheet by clicking the 'validate' tab.
+\n9. Generate an XML file and save it on your desktop.
+\n10. Go to 'upload return' on the portal's panel and upload the saved XML file.
+\n11. A pop-up will be displayed asking you to digitally sign the file. In case you have obtained a digital signature, select'˜Yes'. If you have not got digital signature, choose 'No'.
+\n12. The acknowledgment form, ITR Verification (ITR-V) will be generated which can be downloaded by you.
+\n13. Take a printout of the form ITR-V and sign it in blue ink
+\n14. Send the form by ordinary or speed post to the Income-Tax Department-CPC "
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/quick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="5dp"
+                android:onClick="qui"
+                android:text="Quick e-file ITR" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

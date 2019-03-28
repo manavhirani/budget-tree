@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heads"
+                android:layout_centerHorizontal="true"
+                android:text="Capital Gain"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/heads"
+                android:hint="Expenditure" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText"
+                android:id="@+id/Inc"
+                android:layout_centerHorizontal="true"
+                android:text="in rupees"
+                android:onClick="display"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Inc"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ac"
+                android:hint="Enter cost of acquisition"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ac"
+                android:id="@+id/tac"
+                android:layout_centerHorizontal="true"
+                android:text="in rupees"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tac"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imp"
+                android:hint="Enter cost of improvement"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imp"
+                android:id="@+id/impt"
+                android:layout_centerHorizontal="true"
+                android:text="in rupees"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/impt"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/years"
+                android:hint="Enter the time of possession"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/years"
+                android:id="@+id/yea"
+                android:layout_centerHorizontal="true"
+                android:text="in months"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yea"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/exp"
+                android:hint="Expenses occured during transfer"/>
+
+            <TextView
+                android:id="@+id/expt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exp"
+                android:layout_centerHorizontal="true"
+                android:text="in rupees" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expt"
+                android:id="@+id/asset"
+                android:text="Type of Asset"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/asset"
+                android:id="@+id/im"
+                android:text="Immovable Property"
+                android:layout_alignParentLeft="true"
+                android:onClick="imm"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mova"
+
+                android:layout_below="@id/im"
+                android:text="Movable Property"
+                android:onClick="mov"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lis"
+
+                android:layout_below="@id/mova"
+                android:text="Listed Shares"
+                android:onClick="lis"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eq"
+
+                android:layout_below="@id/lis"
+                android:text="Equity Oriented Mutual Funds"
+                android:onClick="eq"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deb"
+
+                android:layout_below="@+id/eq"
+                android:text="Debt Oriented Mutual Funds"
+
+                android:onClick="deb"/>
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deb"
+                android:id="@+id/result"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/result"
+                android:layout_centerHorizontal="true"
+                android:text="Result" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

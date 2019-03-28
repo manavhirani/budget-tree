@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                android:text="GST SLABS "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/nec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro"
+                android:layout_marginTop="20dp"
+                android:text="Instant Necessities: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/expnec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nec"
+                android:text="Items that are a instant necessity. For e.g. Bread, Butter milk, sanitary napkins, fresh fruits, milk, hearing aid, blood, water, etc."
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fiveper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expnec"
+                android:layout_marginTop="15dp"
+                android:text="Household Necessities: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fiveexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fiveper"
+                android:text="Items such as edible oil, sugar, spices, tea,coffee(except instant), Coal , Indian Sweets, Life-saving drugs, Bio gas, Insulin, etc."
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/twper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fiveexp"
+                android:layout_marginTop="15dp"
+                android:text="Computers and Processed Food: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/twexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twper"
+                android:text="Processed food excluding curry paste,dressings. Cutlery, Two-way radio (Walkie talkie), Intraocular lens, Corrective spectacles, etc."
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/teenper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twexp"
+                android:layout_marginTop="15dp"
+                android:text="Industrial Intermediaries: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/teenexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teenper"
+                android:text="Hair oil, toothpaste and soaps, capital goods and industrial intermediaries, Electrical appliances, etc."
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/ateper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teenexp"
+                android:layout_marginTop="15dp"
+                android:text="Luxury Items: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/ateexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ateper"
+                android:text="Luxury items such as small cars , consumer durables like AC and Refrigerators, premium cars, cigarettes and aerated drinks , High-end motorcycles, etc."
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ateexp"
+                android:layout_marginTop="15dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="@string/click_here"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/calc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/link"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="calculate"
+                android:text="CALCULATE GST" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

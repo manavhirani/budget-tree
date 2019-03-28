@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quick">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/qu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="You have the option to submit ITR 1/ITR 4S forms by uploading XML or by online submission
+
+\n1. Login to e- Filing application
+\n2. Go to 'e File' 'Prepare and Submit ITR Online'
+\n3. Select the Income Tax Return Form ITR 1/ITR 4S and the assessment year.
+\n4. Fill in the details and then click the submit button and choose DSC (Digital Signature Certificate)’ (if available) Click on ‘Submit’.
+\n5. After submission, acknowledgement detail is displayed.
+\n6. Click on the link to view or generate a printout of acknowledgement/ITR V form.
+
+\nTo use DSC, you have to register it in the e-filing application. You can do so by logging in on the e-filing website of the IT Department and updating the Profile Settings section. Under Profile Settings, you have to select Register Digital Signature Certificate and download the ITD e-Filing DSC Management Utility. You can use this utility to generate the DSC file."/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
